@@ -1,0 +1,125 @@
+.simple-shape {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 50px;
+}
+
+.one {
+  background-color: #ffaabb;
+  -webkit-animation: simple-square-to-circle 2s 0s linear infinite alternate;
+  animation: simple-square-to-circle 2s 0s linear infinite alternate;
+}
+
+.two {
+  background-color: #aabbff;
+  -webkit-animation: simple-rotate 2s 2s linear infinite alternate;
+  animation: simple-rotate 2s 2s linear infinite alternate;
+}
+
+.three {
+  background-color: #00ddcc;
+  -webkit-animation: simple-scale 1s 1s linear infinite alternate;
+  animation: simple-scale 1s 1s linear infinite alternate;
+}
+
+.four {
+  background-color: #c7e1ba;
+  -webkit-animation: simple-move 2s 2s linear infinite alternate;
+  animation: simple-move 2s 2s linear infinite alternate;
+}
+
+@-webkit-keyframes simple-square-to-circle {
+  100% {
+    -webkit-border-radius: 50%;
+  }
+}
+
+@keyframes simple-square-to-circle {
+  100% {
+    border-radius: 50%;
+  }
+}
+
+@-webkit-keyframes simple-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes simple-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes simple-scale {
+  100% {
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@keyframes simple-scale {
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes simple-move {
+  100% {
+    -webkit-transform: translate(50px, 0);
+  }
+}
+
+@keyframes simple-move {
+  100% {
+    transform: translate(50px, 0);
+  }
+}
+.predictTitle {
+  font-size: 80px;
+}
+
+/* CSS */
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: 0.75rem 1.5rem;
+  }
+}
